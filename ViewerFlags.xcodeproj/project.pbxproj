@@ -37,6 +37,8 @@
 		616B561F2846FE7700D75FBE /* Monaco@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616B56072846FE7700D75FBE /* Monaco@2x.png */; };
 		616B56202846FE7700D75FBE /* US@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616B56082846FE7700D75FBE /* US@3x.png */; };
 		616B56212846FE7700D75FBE /* Italy@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 616B56092846FE7700D75FBE /* Italy@3x.png */; };
+		61C6AD132849A6890098A61F /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C6AD112849A6890098A61F /* DetailViewController.swift */; };
+		61C6AD142849A6890098A61F /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61C6AD122849A6890098A61F /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -72,6 +74,8 @@
 		616B56072846FE7700D75FBE /* Monaco@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Monaco@2x.png"; sourceTree = "<group>"; };
 		616B56082846FE7700D75FBE /* US@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "US@3x.png"; sourceTree = "<group>"; };
 		616B56092846FE7700D75FBE /* Italy@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Italy@3x.png"; sourceTree = "<group>"; };
+		61C6AD112849A6890098A61F /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		61C6AD122849A6890098A61F /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +111,8 @@
 				6125BFB02845BC8900280EDB /* AppDelegate.swift */,
 				6125BFB22845BC8900280EDB /* SceneDelegate.swift */,
 				6125BFB42845BC8900280EDB /* ViewController.swift */,
+				61C6AD112849A6890098A61F /* DetailViewController.swift */,
+				61C6AD122849A6890098A61F /* DetailViewController.xib */,
 				6125BFB62845BC8A00280EDB /* Main.storyboard */,
 				6125BFB92845BC8F00280EDB /* Assets.xcassets */,
 				6125BFBB2845BC8F00280EDB /* LaunchScreen.storyboard */,
@@ -229,6 +235,7 @@
 				616B56122846FE7700D75FBE /* France@3x.png in Resources */,
 				616B561B2846FE7700D75FBE /* Poland@2x.png in Resources */,
 				616B56172846FE7700D75FBE /* Russia@3x.png in Resources */,
+				61C6AD142849A6890098A61F /* DetailViewController.xib in Resources */,
 				616B56112846FE7700D75FBE /* Ireland@3x.png in Resources */,
 				616B561F2846FE7700D75FBE /* Monaco@2x.png in Resources */,
 				616B56102846FE7700D75FBE /* Ireland@2x.png in Resources */,
@@ -246,6 +253,7 @@
 				6125BFB52845BC8900280EDB /* ViewController.swift in Sources */,
 				6125BFB12845BC8900280EDB /* AppDelegate.swift in Sources */,
 				6125BFB32845BC8900280EDB /* SceneDelegate.swift in Sources */,
+				61C6AD132849A6890098A61F /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

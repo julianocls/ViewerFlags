@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -36,6 +37,35 @@
             </objects>
             <point key="canvasLocation" x="852" y="33"/>
         </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="Zj5-eO-oT0">
+            <objects>
+                <viewController storyboardIdentifier="Detail" id="7AW-WV-oLg" userLabel="Detail View Controller" customClass="DetailViewController" customModule="ViewerFlags" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cz0-D0-JgD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="France.png" translatesAutoresizingMaskIntoConstraints="NO" id="aaI-JH-hSN">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NlU-Uu-VgH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="aaI-JH-hSN" firstAttribute="leading" secondItem="NlU-Uu-VgH" secondAttribute="leading" id="2sp-yP-E9d"/>
+                            <constraint firstItem="aaI-JH-hSN" firstAttribute="top" secondItem="Cz0-D0-JgD" secondAttribute="top" id="907-18-6m1"/>
+                            <constraint firstAttribute="bottom" secondItem="aaI-JH-hSN" secondAttribute="bottom" id="yE9-tG-JsR"/>
+                            <constraint firstItem="aaI-JH-hSN" firstAttribute="trailing" secondItem="NlU-Uu-VgH" secondAttribute="trailing" id="zlg-04-HtQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="aaI-JH-hSN" id="cKy-kB-Brl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KL7-Sy-L55" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1553.6231884057972" y="32.8125"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="K0m-Bw-uiZ">
             <objects>
@@ -56,6 +86,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="France.png" width="200" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -42,19 +42,38 @@ class ViewController: UITableViewController {
         return listFlags.count
     }
 
-    // return data of line namber
+    // return data of line number
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Coutry", for: indexPath)
         
+        if let textName = getNameImage(indexPath) {
+            cell.textLabel?.text = textName
+        }
+        
+        cell.imageView?.image = UIImage(named: listFlags[indexPath.row])
+        cell.imageView?.layer.borderColor = UIColor.lightGray.cgColor
+        cell.imageView?.contentMode = .scaleAspectFill
+
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
+            vc.selectImage = listFlags[indexPath.row]
+            if let textName = getNameImage(indexPath) {
+                vc.selectedImage = textName
+            }
+            navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    func getNameImage(_ indexPath: IndexPath) -> String? {
         if let indexName = listFlags[indexPath.row].lastIndex(of: ".")  {
             let imageName = listFlags[indexPath.row]
             let name = String(imageName[..<indexName])
-            cell.textLabel?.text = " - " + name
+            return name
         }
-        cell.imageView?.image = UIImage(named: listFlags[indexPath.row])
-        cell.imageView?.layer.borderColor = UIColor.lightGray.cgColor
-
-        return cell
+        return nil
     }
 
 }
